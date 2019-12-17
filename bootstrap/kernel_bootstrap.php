@@ -12,7 +12,7 @@
 if (getenv('KERNEL_CLASS')) {
     $kernelClassName = getenv('KERNEL_CLASS');
 
-    return new $kernelClassName($env, true);
+    return new $kernelClassName($env, false);
 }
 $rootDir = realpath(__DIR__.'/../../../..');
 $phpUnitFile = $rootDir.'/phpunit.xml.dist';
